@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-    
+   width: 100%; 
 }
 
 .grid-item {
@@ -36,9 +36,6 @@ body {
 
 }
 
-.testimonial {
-    display: none;
-}
 .bevel {
     width: 150px;
     height: 150px;
@@ -50,6 +47,8 @@ body {
     display: none;
 }
 .message {
+    display: block;
+    margin: auto;
     width: 150px;
     height: 150px;
     background-color: rgb(87, 168, 214);
@@ -63,7 +62,6 @@ body {
     height: 90px;
     background-color: rgb(235, 172, 78);
     clip-path: circle(50% at 50% 50%);
-
 }
 
 .menu {
@@ -171,7 +169,7 @@ body {
     }
 
     .contact-form {
-        display: block;
+        display: flex;
         width: 762px;
         height: 422px;
         background-color: rgb(95, 227, 196);
@@ -180,10 +178,11 @@ body {
     }
 
     .social-media {
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
-        gap: 20px;
+        display: block;
+        margin: 20px ;
+    }
+    .social-media div {
+        margin-right: 20px;
     }
     
 }
@@ -279,7 +278,7 @@ body {
         width: 100%;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto; 
-        margin-top: 40px;
+        margin: 40px 20px;
         
     }
 
@@ -291,15 +290,21 @@ body {
         display: block;
         width: 688px;
         height: 588px;
+        margin: 0px 20px;
         background-color: rgb(95, 227, 196);
         clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
 
     }
-    .social-media {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(3, auto);
-        gap: 20px;
+
+    .social-media div {
+      
+
     }
- }
+       .social-media {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-content: end;
+        margin-left: 20px;
+  
+    }
+  }
